@@ -1,0 +1,28 @@
+strategy: market_state_strategy
+connector: binance_paper_trade
+market: BTC-USDT
+
+# ADX Parameters
+adx_short_window: 7
+adx_mid_window: 14
+adx_long_window: 30
+adx_trend_threshold: 25.0
+adx_range_threshold: 20.0
+update_interval: 60.0
+
+# Trading Parameters
+base_order_amount: 10.0
+stop_loss_pct: 15.0
+
+# Grid Trading Parameters (for RANGE markets)
+grid_levels: 5
+grid_spread: 1.0
+
+# MACD Parameters (for TREND markets)
+macd_fast: 12
+macd_slow: 26
+macd_signal: 9
+
+# Reverse Martingale Parameters
+martingale_multiplier: 1.5
+max_martingale_levels: 3

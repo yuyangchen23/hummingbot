@@ -96,3 +96,8 @@ coverage.xml
 .env
 
 **/.claude/settings.local.json
+
+
+backtest/
+hummingbot/strategy/limit_order/
+hummingbot/templates/conf_limit_order_strategy_TEMPLATE.yml
